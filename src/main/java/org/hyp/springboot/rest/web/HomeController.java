@@ -15,6 +15,11 @@ public class HomeController {
         fooService.foo();
         return "Hello!";
     }
+
+    @RequestMapping("/home/simple")
+    String homeSimple() {
+        return "Hello!";
+    }
 }
 
 @RestController
