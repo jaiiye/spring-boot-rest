@@ -36,13 +36,41 @@ public class City implements Serializable {
     @Column(nullable = false)
     private String map;
 
-    protected City() {
+    public City() {
     }
 
     public City(String name, String country) {
         super();
         this.name = name;
         this.country = country;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setMap(String map) {
+        this.map = map;
     }
 
     public String getName() {

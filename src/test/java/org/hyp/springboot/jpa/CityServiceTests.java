@@ -2,6 +2,7 @@ package org.hyp.springboot.jpa;
 
 import org.hyp.springboot.ApplicationTests;
 import org.hyp.springboot.rest.jpa.domain.City;
+import org.hyp.springboot.rest.jpa.service.CityDao;
 import org.hyp.springboot.rest.jpa.service.CityService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,16 @@ import static org.junit.Assert.assertNotNull;
 public class CityServiceTests extends ApplicationTests {
     @Autowired
     CityService service;
+    @Autowired
+    CityDao dao;
 
+    @Test
+    public void getCityByDao() {
+        City city = dao.getByNameAndCountry("Tokyo", "Japan");
+        assertNotNull(city);
+
+        assertEquals("Tokyo", city.getName());
+    }
     @Test
     public void getCity() {
         City city = service.getCity("Tokyo", "Japan");
