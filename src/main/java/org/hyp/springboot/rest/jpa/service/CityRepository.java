@@ -16,6 +16,7 @@
 package org.hyp.springboot.rest.jpa.service;
 
 import org.hyp.springboot.rest.jpa.domain.City;
+import org.hyp.springboot.rest.jdbc.domain.CityDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.Repository;
@@ -24,4 +25,5 @@ public interface CityRepository extends Repository<City, Long> {
     Page<City> findAll(Pageable pageable);
 
     City findByNameAndCountryAllIgnoringCase(String name, String country);
+    CityDto findByNameAndCountry(String name, String country);
 }
