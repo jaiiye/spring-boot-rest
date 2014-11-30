@@ -30,7 +30,9 @@ public class CityServiceTests extends ApplicationTests {
         City city = dao.getByNameAndCountry("Tokyo", "Japan");
         assertNotNull(city);
         assertEquals("Tokyo", city.getName());
-
+    }
+    @Test
+    public void getCityDtoByDao() {
         CityDto cityDto = dao.getCityDtoByNameAndCountry("Tokyo", "Japan");
         assertNotNull(cityDto);
         assertEquals("Tokyo", cityDto.getName());
