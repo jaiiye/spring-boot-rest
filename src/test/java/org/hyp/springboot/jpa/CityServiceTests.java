@@ -2,7 +2,7 @@ package org.hyp.springboot.jpa;
 
 import org.hyp.springboot.ApplicationTests;
 import org.hyp.springboot.rest.jpa.domain.City;
-import org.hyp.springboot.rest.jdbc.domain.CityDto;
+import org.hyp.springboot.rest.jdbc.dto.CityDto;
 import org.hyp.springboot.rest.jdbc.dao.CityDao;
 import org.hyp.springboot.rest.jpa.service.CityRepository;
 import org.hyp.springboot.rest.jpa.service.CityService;

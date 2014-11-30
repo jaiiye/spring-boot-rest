@@ -1,7 +1,7 @@
 package org.hyp.springboot.rest.jdbc.dao;
 
 import org.hyp.springboot.rest.jpa.domain.City;
-import org.hyp.springboot.rest.jdbc.domain.CityDto;
+import org.hyp.springboot.rest.jdbc.dto.CityDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

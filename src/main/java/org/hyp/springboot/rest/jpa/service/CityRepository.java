@@ -16,7 +16,7 @@
 package org.hyp.springboot.rest.jpa.service;
 
 import org.hyp.springboot.rest.jpa.domain.City;
-import org.hyp.springboot.rest.jdbc.domain.CityDto;
+import org.hyp.springboot.rest.jdbc.dto.CityDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.Repository;

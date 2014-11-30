@@ -1,4 +1,4 @@
-package org.hyp.springboot.rest.jdbc.domain;
+package org.hyp.springboot.rest.jdbc.dto;
 
 import java.io.Serializable;
 
